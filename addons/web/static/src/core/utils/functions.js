@@ -31,5 +31,6 @@ export function memoize(func) {
 export function uniqueId(prefix = "") {
     return `${prefix}${++uniqueId.nextId}`;
 }
+
 // set nextId on the function itself to be able to patch then
 uniqueId.nextId = 0;
